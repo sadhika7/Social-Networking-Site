@@ -1,0 +1,420 @@
+@font-face {
+  font-family: "Bellota-LightItalic";
+  src: url("../fonts/Bellota-LightItalic.otf");
+}
+@font-face {
+  font-family: "Bellota-BoldItalic";
+  src: url("../fonts/Bellota-BoldItalic.otf");
+}
+body {
+  /* line-height: 17px; */
+  background-color: #e6eae8;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.top_bar {
+  width: 100%;
+  min-width: 1050px;
+  height: 55px;
+  background-color: #2980b9;
+  /* border-bottom: 0.25em solid #f39c12; */
+  margin: 0 0 10px 0;
+  display: inline-flex;
+  /* position: fixed; */
+  z-index: 10;
+}
+.logo a {
+  font-family: "Bellota-BoldItalic", sans-serif;
+  margin-left: 10px;
+  font-size: 30px;
+  position: relative;
+  top: 0px;
+  color: #fff;
+  text-shadow: #000 0.5px 0.5px 0px;
+}
+
+#text {
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  float: right;
+  right: 1px;
+  position: absolute;
+  margin: 10px;
+}
+nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  color: white;
+}
+.wrapper {
+  margin: 0 auto;
+  top: 50px;
+  position: relative;
+  padding: 0 10px;
+  width: 75%;
+  min-width: 950px;
+}
+.column {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #d3d3d3;
+  z-index: -1;
+}
+#head {
+  margin-top: -10px;
+  height: 50%;
+}
+.user_details {
+  width: 250px;
+  float: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#user {
+  background-color: #2d98da;
+  height: 35%;
+}
+.user_details img {
+  height: 120px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.user_details_left_right {
+  width: 120px;
+  display: inline-table;
+  /* position: absolute; */
+  color: #fff;
+}
+
+#profile_left {
+  background-color: #2d98da;
+  color: #fff;
+  height: 40%;
+}
+.main_column {
+  margin-left: 10px;
+  float: left;
+  width: 70%;
+  z-index: -1;
+  min-height: 160px;
+  font-size: 18px;
+}
+
+.main_column1 {
+  float: right;
+  width: 70%;
+  z-index: -1;
+  min-height: 170px;
+}
+.post_form {
+  width: 100%;
+}
+
+.post_form textarea {
+  width: 81%;
+  height: 60px;
+  border-radius: 3px;
+  margin-right: 5px;
+  border: 1px solid #d3d3d3;
+  font-size: 12px;
+  padding: 5px;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+.post_form input[type="submit"] {
+  width: 11%;
+  height: 60px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2d98da;
+  font-family: "Bellota-BoldItalic", sans-serif;
+  color: #fff;
+  text-shadow: #73b6e2 0.5px 0.5px 0px;
+  font-size: 120%;
+  position: absolute;
+  outline: 0;
+  margin: 0;
+}
+
+.post_form input[type="submit"]:active {
+  padding: 3px 3px 3px 3px;
+}
+
+#post_text {
+  border: 2px solid #2980b9;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.posts_area {
+  font-size: 20px;
+}
+.status_post {
+  width: 96%;
+  font-size: 15px;
+  padding: 0px 5px;
+  min-height: 75px;
+  cursor: pointer;
+}
+.post_profile_pic {
+  float: left;
+  margin-right: 7px;
+}
+.post_profile_pic img {
+  border-radius: 5px;
+}
+#comment_iframe {
+  max-height: 250px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.comment_section {
+  padding: 0 5px 5px 5px;
+}
+
+.comment_section img {
+  margin: 0 3px 3px 3px;
+  border-radius: 3px;
+}
+#comment_form textarea {
+  border: 2px solid #2980b9;
+  width: 85%;
+  height: 35px;
+  color: #778ca3;
+  font-size: 14px;
+  margin: 3px 3px 3px 5px;
+}
+
+#comment_form input[type="submit"] {
+  border: none;
+  background-color: #2980b9;
+  border-radius: 5px;
+  width: 13%;
+  height: 35px;
+  margin-top: 3px;
+  position: absolute;
+  font-family: "Bellota-BoldItalic", sans-serif;
+  color: #fff;
+  text-shadow: #73b6e2 0.5px 0.5px 0px;
+}
+.newsfeedPostOptions {
+  padding: 0px;
+  text-decoration: none;
+  color: #20aae5;
+  border: none;
+}
+.newsfeedPostOptions iframe {
+  border: 0px;
+  height: 17px;
+  width: 120px;
+}
+
+.newsfeedPostOptions form {
+  position: absolute;
+  top: 0;
+}
+
+.comment_like {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #3498db;
+  padding: 0;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.like_value {
+  display: inline;
+  font-size: 14px;
+}
+.profile_info {
+  display: last-item;
+  /* background-color: #2980b9; */
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+.profile_info p {
+  margin: 0 0 0 20px;
+  word-wrap: break-word;
+}
+
+.danger {
+  background-color: #e74c3c;
+}
+.warning {
+  background-color: #f0ad4e;
+}
+.default {
+  background-color: #bdc3c7;
+}
+.success {
+  background-color: #2ecc71;
+}
+.info {
+  background-color: #3498db;
+}
+.deep_blue {
+  background-color: #3498db;
+}
+
+.profile_left input[type="submit"] {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 7px 0 0 7px;
+  border: none;
+  color: #fff;
+}
+
+.delete_button {
+  height: 22px;
+  width: 22px;
+  padding: 0;
+  float: right;
+  border-radius: 4px;
+  right: -15px;
+  position: relative;
+}
+
+.profile_main_column {
+  min-width: 675px;
+  float: left;
+  width: 70%;
+  z-index: -1;
+}
+
+#message_textarea {
+  width: 80%;
+  margin-right: 8px;
+  font-size: 18px;
+  border: 2px solid #2980b9;
+  border-radius: 4px;
+  height: 15%;
+}
+#message_submit {
+  height: 41px;
+  width: 120px;
+  margin: 0;
+  position: absolute;
+  border: none;
+  background-color: #20aae5;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: #73b6e2 0.5px 0.5px 0px;
+}
+#messagePost {
+  height: 26%;
+}
+.message {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  color: #fff;
+}
+
+.message#blue {
+  background-color: #2d98da;
+  border-color: #2980b9;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.message#green {
+  background-color: #0fb9b1;
+  border-color: #27ae60;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.loaded_messages {
+  height: 65%;
+  min-height: 300px;
+  max-height: 400px;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+
+#conversations {
+  position: relative;
+}
+#convo1 {
+  margin-top: -40px;
+  float: left;
+  position: relative;
+}
+
+.loaded_conversation {
+  max-height: 216px;
+  overflow: scroll;
+}
+.user_found_messages {
+  border-bottom: 1px solid #d3d3d3;
+  padding: 8px 8px 10px 8px;
+}
+
+.user_found_messages:hover {
+  background-color: #d3d3d3;
+}
+
+.user_found_messages img {
+  height: 35px;
+  float: left;
+}
+
+#grey {
+  color: #8c8c8c;
+}
+
+.resultDisplay {
+  padding: 5px 5px 0 5px;
+  height: 60px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.resultDisplay a {
+  float: none;
+}
+
+.resultDisplay:hover {
+  background-color: #ebebeb;
+  text-decoration: none;
+}
+
+.liveSearchProfilePic img {
+  height: 50px;
+  border-radius: 25px;
+  margin: 1px 12px 0 2px;
+  float: left;
+}
+
+.liveSearchText {
+  background-color: transparent;
+  color: #1e96ca;
+}
+.liveSearchText p {
+  margin-left: 10px;
+  font-size: 12px;
+}
